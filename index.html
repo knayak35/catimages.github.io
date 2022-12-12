@@ -28,7 +28,7 @@
 
 h1 {
   font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(rgb(255, 5, 5), rgb(228, 164, 15), rgb(228, 15, 224));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Poppins', sans-serif;
@@ -38,6 +38,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
 }
+
+
 </style>
 
 <script>
@@ -47,10 +49,10 @@ function showImage() {
   var images = [
     {link: "https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1175550351.jpg",
     width: "250",
-    height: "150"},
+    height: "175"},
     {link: "https://i.pinimg.com/originals/01/6f/72/016f72c5812e1b8f71bdbf19d8c7558b.jpg",
-    width: "320",
-    height: "195"},
+    width: "350",
+    height: "250"},
     {link: "https://nationaltoday.com/wp-content/uploads/2020/08/international-cat-day-640x514.jpg",
     width: "500",
     height: "343"},
@@ -58,14 +60,14 @@ function showImage() {
     width: "500",
     height: "343", },
     {link: "https://raw.githubusercontent.com/knayak35/cat-images/main/lily1.png",
-    width: "500",
-    height: "343", },
+    width: "300",
+    height: "500", },
     {link: "https://raw.githubusercontent.com/knayak35/cat-images/main/lily2.png",
-    width: "500",
-    height: "343", }, 
+    width: "350",
+    height: "500", }, 
     {link: "https://raw.githubusercontent.com/knayak35/cat-images/main/lily3.png",
-    width: "500",
-    height: "343", }
+    width: "300",
+    height: "500", }
 
     
 ];
@@ -76,6 +78,7 @@ function showImage() {
   image.src = images[random].link;
   image.width = images[random].width;
   image.height = images[random].height;
+
   
   
   var elImgs = document.getElementsByTagName("img");
